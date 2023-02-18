@@ -17,3 +17,5 @@ select * from Address_Book
 update Address_Book set Address = 'Udaypur' where FirstName = 'Vikram'
 delete from Address_Book where FirstName = 'raj'
 select * from Address_Book where city = 'Pune' or state = 'Rahsthan'
+
+select Count(*) as Size_Of_Address_Book from Address_Book
