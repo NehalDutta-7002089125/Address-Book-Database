@@ -19,3 +19,5 @@ delete from Address_Book where FirstName = 'raj'
 select * from Address_Book where city = 'Pune' or state = 'Rahsthan'
 
 select Count(*) as Size_Of_Address_Book from Address_Book
+
+select * from Address_Book where state = 'Goa' Order By FirstName
