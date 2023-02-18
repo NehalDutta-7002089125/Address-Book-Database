@@ -40,7 +40,11 @@ Contact_Type VARCHAR(20)
 
 update Address_Book
 set Book_Name='FriendName',Contact_Type='Friends'where FirstName='Snehal'
-set Book_Name='FamilyName',Contact_Type='Family'where FirstName='Kajal' 
-set Book_Name='OfficeName',Contact_Type='Profession'where FirstName='Vikram' 
+set Book_Name='FamilyName',Contact_Type='Family'where FirstName='Kajal'
+set Book_Name='OfficeName',Contact_Type='Profession'where FirstName='Vikram'
 set Book_Name='FamilyName',Contact_Type='Profession'where FirstName='Rutuja' 
 set Book_Name='FriendName',Contact_Type='Friends'where FirstName='Rohit' 
+
+select Count(*) as no_of_Contacts,Contact_Type
+from  Address_Book
+Group by Contact_Type
